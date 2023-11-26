@@ -9,6 +9,7 @@ import { Pregunta4Component } from './pregunta4/pregunta4.component';
 import { RouterModule } from '@angular/router';
 import { HomeComponent } from './home/home.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -21,6 +22,7 @@ import { ReactiveFormsModule } from '@angular/forms';
   imports: [
     BrowserModule,
     ReactiveFormsModule,
+    HttpClientModule,
     //AppRoutingModule
     RouterModule.forRoot([
       { path: 'pregunta2', component: Pregunta2Component },
