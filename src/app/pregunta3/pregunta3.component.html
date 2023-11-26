@@ -1,0 +1,13 @@
+<p>pregunta3 works!</p>
+<form [formGroup]="notas" (ngSubmit)="calcularProm()">
+    <label for="nota1">Nota1:</label><br>
+    <input id="nota1" type="text" formControlName="nota1"><br>
+    <label for="nota2">Nota2:</label><br>
+    <input id="nota2" type="text" formControlName="nota2"><br>
+    <label for="nota3">Nota3:</label><br>
+    <input id="nota3" type="text" formControlName="nota3"><br>
+    <label for="nota4">Nota4:</label><br>
+    <input id="nota4" type="text" formControlName="nota4"><br>
+    <button type="submit">Submit</button>
+</form>
+{{prom}}

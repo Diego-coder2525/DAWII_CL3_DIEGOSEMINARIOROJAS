@@ -1,0 +1,11 @@
+<p>pregunta2 works!</p>
+
+<form [formGroup]="parkingForm" (ngSubmit)="calculateFee()">
+    <label for="nombre">Horas:</label><br>
+    <input id="hours" type="text" formControlName="hours"><br>
+    <label for="email">Minutos:</label><br>
+    <input id="minutes" type="text" formControlName="minutes"><br>
+    <!-- Add more fields here -->
+    <button type="submit">Submit</button>
+</form>
+{{totalFee}}
