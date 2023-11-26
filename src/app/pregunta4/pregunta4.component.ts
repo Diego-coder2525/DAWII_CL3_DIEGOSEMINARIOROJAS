@@ -8,6 +8,7 @@ import { rickMorty } from '../rick-morty';
   styleUrl: './pregunta4.component.css',
 })
 export class Pregunta4Component{
+  
   rickMorty: rickMorty[] = [];
   columnasDesplegadas: string[] = [
     'id',
@@ -26,5 +27,6 @@ export class Pregunta4Component{
     (error) =>{
       console.log(error);
     });
+    
   }
 }

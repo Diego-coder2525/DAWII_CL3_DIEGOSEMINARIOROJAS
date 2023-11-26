@@ -2,14 +2,10 @@
     <tr>
       <th *ngFor="let columna of columnasDesplegadas">{{ columna }}</th>
     </tr>
-    <tr *ngFor="let item of rickMorty">
-      <td>{{ item.id }}</td>
-      <td>{{ item.name }}</td>
-      <td>{{ item.air_date }}</td>
-      <td>{{ item.episode }}</td>
-      <td>{{ item.characters }}</td>
-      <td>{{ item.url }}</td>
-      <td>{{ item.created }}</td>
+    
+    <tr *ngFor="let item of rickMorty | keyvalue" >
+        
+      <td>{{ item.value }}</td>
+
     </tr>
   </table>
-  
